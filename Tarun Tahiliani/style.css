@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    padding: 0 5% 0 5%;
+    text-align: center;
+}
+
+.Navbar {
+    padding: 15px 0px 15px 0px;
+    text-align: left;
+}
+
+.Navbar div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Navbar ul {
+    font-size: 16px;
+    list-style-type: none;
+    color: #795A3A;
+}
+
+.Header ul li {
+    margin: 6px 3px 6px 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.Header ul li a {
+    text-decoration: none;
+    color: #795A3A;
+}
+
+.LeftHeader {
+    width: 33%;
+    justify-content: center;
+    text-align: left;
+}
+
+.MiddleHeader {
+    width: 33%;
+    justify-content: center;
+    text-align: center;
+}
+
+.RightHeader {
+    width: 33%;
+    justify-content: center;
+    text-align: right;
+}
+
+/* Second Navbar */
+.Navbar2 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+    text-align: left;
+}
+
+.Navbar2 i {
+    border: none;
+    color: #795A3A;;
+}
+
+/* Main Body */
+
+.Body{
+    width: 100%;
+    height: 100%;
+} 
+
+.BridalWear {
+    width: 100%;
+    aspect-ratio: 2.244;
+    background-image: url(/Main\ TT.webp);
+    background-size: cover;
+}
+
+.ReadytoWear{
+    width: 100%;
+    aspect-ratio: 1.9207;
+    background-image: url(/Ready\ to\ wear\ TT.webp);
+    background-size: cover;
+}
+
+.Couture{
+    width: 100%;
+    aspect-ratio: 1.9207;
+    background-image: url(/COUTURE\ TT.webp);
+    background-size: cover;
+}
+
+.Man{
+    width: 100%;
+    aspect-ratio: 1.9207;
+    background-image: url(/Man\ TT.webp);
+    background-size: cover;
+}
+
+.Accessories{
+    width: 100%;
+    aspect-ratio: 1.9207;
+    background-image: url(/Accessories\ TT.webp);
+    background-size: cover;
+}
+
+/* Footer */
+
+.Footer {
+    height: 80vh;
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgb(30, 30, 30);
+}
+
+/* First Footer */
+
+.LastPart {
+    width: 100%;
+    height: 100%;
+}
+
+.Footer:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh;
+}
+
+.Footer ul {
+    color: white;
+    list-style-type: none;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+
+.Footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.Footer .LastPart ul li {
+    padding-bottom: 15px;
+}
+
+.Footer .LastPart ul li h3 {
+    padding-bottom: 18px;
+}
+
+ul li button {
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+    padding: 0px 150px 17px 0px;
+    border-bottom: 2px solid grey;
+}
+
+/* Second Footer */
+
+.LastPart2 {
+    padding: 10vh 5vw;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+}
+
+.LastPart2 div {
+    border: none;
+    margin-bottom: 50px;
+    padding: 0px 150px 0px 0px;
+    border-bottom: 2px solid grey;
+}
+
+.LastPart2 li button {
+    border-bottom: none;
+}
+
+.LastPart2 .FFirstC2 h3 {
+    padding-bottom: 3vh;
+}
+
+.LastPart2 .FFourthC h3 {
+    padding-bottom: 3vh;
+}
+
+.LastPart2 .FFourthC li {
+    padding-bottom: 2vh;
+}
+
+.LastPart2 .FFifthC2 {
+    border-bottom: none;
+}
+
+
+
+
+/* Responsive code */
+/* Responsive code */
+/* Responsive code */
+
+/* For hiding the First Navbar */
+@media screen and (max-width: 1065px) {
+    .Navbar {
+        display: none;
+    }
+  }
+
+
+/* For hiding the Second Navbar */
+@media screen and (min-width: 1065px) {
+    .Navbar2 {
+        display: none;
+    }
+  }
+
+/* for Footer */
+@media only screen and (min-width: 675px) {
+    .Footer {
+        height: 95vh;
+    }
+    .Footer .LastPart {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      padding: 2.75vh;
+    }
+    .LastPart div {
+        padding: 2.75vh;
+    }
+    .FFirstC {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .FSecondC {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .FThirdC {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .FFourthC {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .Footer ul li {
+        padding: 0px 0px 9px 0px;
+    }
+    /* .LastPart2 {
+        display: none;
+    } */
+  }
+
+  @media only screen and (min-width: 1070px) {
+    .Footer .LastPart {
+        display: flex;
+        flex-direction: row;
+        padding: 5vh;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .LastPart ul li {
+        padding: 7px;
+    }
+  }
+
+  @media screen and (min-width: 675px) {
+    .LastPart2 {
+        display: none;
+    }
+  }
+
+  
+  @media only screen and (max-width: 675px) {
+    .Footer {
+        height: 95vh;
+    }
+    .LastPart {
+        display: none;
+    }
+  }
+  
